@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.2.1.js"></script>
+    <style>
+        input {
+            visibility: hidden;
+        }
+        .laatzien {
+            visibility: visible;
+        }
+
+    </style>
+</head>
+<body>
+<script>
+    $(document).ready(function() {
+        $("#klik").click(function () {
+            $("#text2").toggleClass("laatzien");
+        })
+    });
+</script>
+
+ <input id="text2" type="text" placeholder="voornaam"><br>
+<button id="klik">Klik maar</button>
+</form>
+</body>

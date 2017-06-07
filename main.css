@@ -1,0 +1,91 @@
+html {
+    font-family: monospace;
+    height: auto;
+    width: auto;
+}
+
+#leftbackfixed {
+    left: 0;
+    position: fixed;
+}
+
+#rightbackfixed {
+    position: fixed;
+    right: 0;
+}
+
+.itistheoneback {
+    animation-duration: 2.6s;
+    animation-name: onetotwoback;
+    animation-timing-function: ease-out;
+    background-color: #DDDEDF;
+    color: #121213;
+    height: 100%;
+    top: 0;
+    width: 50%;
+}
+
+.itisthetwoback {
+    animation-duration: 2.6s;
+    animation-name: twotooneback;
+    animation-timing-function: ease-out;
+    background-color: #121213;
+    color: #DDDEDF;
+    height: 100%;
+    top: 0;
+    width: 50%;
+}
+
+.itistheonefront {
+    animation-duration: 1.6s;
+    animation-name: onetotwofront;
+    animation-timing-function: ease-out;
+    text-align: center;
+}
+
+.itisthetwofront {
+    animation-duration: 1.6s;
+    animation-name: twotoonefront;
+    animation-timing-function: ease-out;
+    text-align: center;
+}
+
+@keyframes onetotwoback {
+    0% {
+        background-color: #121213;
+        color: #DDDEDF; 
+    }
+    50% {
+        background-color: #DDDEDF;
+        color: #121213;
+    }
+}
+
+@keyframes twotooneback {
+    0% {
+        background-color: #DDDEDF;
+        color: #121213; 
+    }
+    50% {
+        background-color: #121213;
+        color: #DDDEDF;
+    }
+}
+
+@keyframes onetotwofront {
+    0% {
+        padding-top: 110%; 
+    }
+    50% {
+        padding-top: 6%; 
+    }
+}
+
+@keyframes twotoonefront {
+    0% {
+        margin-top: -110%; 
+    }
+    50% {
+        margin-top: -6%; 
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript lab 01 </title>
+    <!--dit script werkt met variabelen
+auteur: typ je eigen naam hier
+-->
+</head>
+<body>
+<script type="text/javascript">
+    var klantnaam = prompt("Voer je eigen naam in");
+    var aantal = parseInt(prompt("Aantal boeken te bestellen"));
+    var titel = "Javascript";
+    var prijs = 29.90;
+    var bedrag =   aantal * prijs;
+    var btw = parseInt(0.06 * bedrag);
+    var totaal = bedrag + btw;
+    var bezorgkosten = 15;
+    var woonplaats = prompt("voer jouw woonplaats in" );
+
+    document.writeln("Bedankt voor je bestelling: " + klantnaam + "<br />");
+    document.writeln("Boektitel is: " + titel + "<br />");
+    document.writeln("Aantal te bestellen: " + aantal + "<br />");
+    document.writeln("Prijs per boek is ...." + prijs.toFixed(2) + "<br />");
+    document.writeln("Bedrag is: " + bedrag + "<br />");
+    document.writeln("BTW is 6% van bedrag: " + btw.toFixed(2) +  "<br />");
+    document.writeln("totaal te betalen bedrag plus btw: " + totaal + "<br />" );
+
+
+</script>
+
+</body>
+</html>
